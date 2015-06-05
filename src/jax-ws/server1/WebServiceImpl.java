@@ -12,7 +12,7 @@ import javax.jws.WebService;
  * 
  * 创建日期：2014年5月21日
  */
-@WebService(endpointInterface="server.IWebService")
+@WebService(endpointInterface="server1.IWebService")
 public class WebServiceImpl implements IWebService {
 
 	@Override
