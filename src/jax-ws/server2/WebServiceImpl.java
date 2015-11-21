@@ -6,11 +6,11 @@ package server2;
 import javax.jws.WebService;
 
 /**
- * webserviceµÄÊµÏÖÀà
+ * webserviceçš„å®ç°ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2014Äê5ÔÂ21ÈÕ
+ * åˆ›å»ºæ—¥æœŸï¼š2014å¹´5æœˆ21æ—¥
  */
 @WebService(endpointInterface="server2.IWebService")
 public class WebServiceImpl implements IWebService {

@@ -6,11 +6,11 @@ package server1;
 import javax.xml.ws.Endpoint;
 
 /**
- * ·şÎñÆ÷
+ * æœåŠ¡å™¨
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2014Äê5ÔÂ21ÈÕ
+ * åˆ›å»ºæ—¥æœŸï¼š2014å¹´5æœˆ21æ—¥
  */
 public class Server {
 
@@ -18,7 +18,7 @@ public class Server {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// Ê¹ÓÃÖ¸¶¨µØÖ··¢²¼Ò»¸öwebservice£¬¶¯Ì¬Éú³ÉwebserviceËùĞèµÄ¸÷ÖÖÎÄ¼ş
+		// ä½¿ç”¨æŒ‡å®šåœ°å€å‘å¸ƒä¸€ä¸ªwebserviceï¼ŒåŠ¨æ€ç”Ÿæˆwebserviceæ‰€éœ€çš„å„ç§æ–‡ä»¶
 		Endpoint.publish("http://localhost:8888/helloworld", new WebServiceImpl());
 	}
 }

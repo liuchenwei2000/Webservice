@@ -8,17 +8,17 @@ import javax.jws.WebResult;
 import javax.jws.WebService;
 
 /**
- * webserviceµÄ½Ó¿ÚÀà
+ * webserviceçš„æ¥å£ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2014Äê5ÔÂ21ÈÕ
+ * åˆ›å»ºæ—¥æœŸï¼š2014å¹´5æœˆ21æ—¥
  */
 @WebService
 public interface IWebService {
 
 	/**
-	 * ±êÊ¶·µ»ØÖµµÄÃû³ÆÎª"addResult"£¬´«ÈëµÄ²ÎÊıÃû³ÆÎª"a"ºÍ"b"£¬·½±ã¿Í»§¶Ëµ÷ÓÃºÍ½âÎö
+	 * æ ‡è¯†è¿”å›å€¼çš„åç§°ä¸º"addResult"ï¼Œä¼ å…¥çš„å‚æ•°åç§°ä¸º"a"å’Œ"b"ï¼Œæ–¹ä¾¿å®¢æˆ·ç«¯è°ƒç”¨å’Œè§£æ
 	 */
 	@WebResult(name="addResult")
 	public int add(@WebParam(name="a")int a,@WebParam(name="b")int b);

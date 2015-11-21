@@ -15,9 +15,9 @@ import server.vo.Person;
 /**
  * 
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2013-8-26
+ * åˆ›å»ºæ—¥æœŸï¼š2013-8-26
  */
 @WebService(name="ncService",  portName="ncServicePort", targetNamespace="http://www.sd.yonyou.com")
 public class NCService {

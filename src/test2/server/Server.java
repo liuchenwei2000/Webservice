@@ -8,9 +8,9 @@ import javax.xml.ws.Endpoint;
 /**
  * 
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2013-8-26
+ * åˆ›å»ºæ—¥æœŸï¼š2013-8-26
  */
 public class Server {
 

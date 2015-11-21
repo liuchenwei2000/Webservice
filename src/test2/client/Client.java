@@ -13,23 +13,23 @@ import java.util.List;
 /**
  * 
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2013-8-26
+ * åˆ›å»ºæ—¥æœŸï¼š2013-8-26
  */
 public class Client {
 
 	public static String WS_URL = "http://127.0.0.1:8001/ncServicePort";
     
-    // ²âÊÔÖ÷·½·¨   
+    // æµ‹è¯•ä¸»æ–¹æ³•   
     public static void main(String[] args) throws IOException, Exception {   
         testService("liucw1");   
     }   
 	
-    // µ÷ÓÃWS   
+    // è°ƒç”¨WS   
     private static void testService(String name) throws Exception,   
             IOException {   
-        // ¹¹½¨ÇëÇó±¨ÎÄ   
+        // æ„å»ºè¯·æ±‚æŠ¥æ–‡   
 //        StringBuffer sendMsgBuffer = new StringBuffer(   
 //                "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:sd=\"http://www.sd.yonyou.com\">");   
 //        sendMsgBuffer.append("<soapenv:Header/>").append("<soapenv:Body>")   
@@ -43,11 +43,11 @@ public class Client {
          .append("</soapenv:Body>").append("</soapenv:Envelope>");  
         String sendMsg = sendMsgBuffer.toString();   
   
-        // ¿ªÆôHTTPÁ¬½Ó
+        // å¼€å¯HTTPè¿æ¥
         URL url = new URL(WS_URL);   
         HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();   
            
-        // ÉèÖÃHTTPÇëÇóÏà¹ØĞÅÏ¢   
+        // è®¾ç½®HTTPè¯·æ±‚ç›¸å…³ä¿¡æ¯   
         httpConn.setRequestProperty("Content-Length",   
                 String.valueOf(sendMsg.getBytes().length));   
         httpConn.setRequestProperty("Content-Type", "text/xml; charset=utf-8");   
@@ -55,14 +55,14 @@ public class Client {
         httpConn.setDoOutput(true);   
         httpConn.setDoInput(true);   
   
-        // ½øĞĞHTTPÇëÇó   
+        // è¿›è¡ŒHTTPè¯·æ±‚   
         OutputStream outObject = httpConn.getOutputStream();   
         outObject.write(sendMsg.getBytes());   
            
-        // ¹Ø±ÕÊä³öÁ÷   
+        // å…³é—­è¾“å‡ºæµ   
         outObject.close();   
   
-        // »ñÈ¡HTTPÏìÓ¦Êı¾İ   
+        // è·å–HTTPå“åº”æ•°æ®   
         InputStream inputStream = httpConn.getInputStream();
      List<ClientPerson> list = XMLReader.read(inputStream);
         System.out.println(list.size());
@@ -75,9 +75,9 @@ public class Client {
 //            result.append(inputLine);   
 //        }   
 //           
-//        // ´òÓ¡HTTPÏìÓ¦Êı¾İ   
+//        // æ‰“å°HTTPå“åº”æ•°æ®   
 //        System.out.println(result);   
-//        // ¹Ø±ÕÊäÈëÁ÷   
+//        // å…³é—­è¾“å…¥æµ   
 //        inReader.close();   
 //        isr.close();   
     }   

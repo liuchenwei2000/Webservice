@@ -10,16 +10,16 @@ import org.xml.sax.helpers.DefaultHandler;
 /**
  * 
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2013-8-28
+ * åˆ›å»ºæ—¥æœŸï¼š2013-8-28
  */
 public class PersonSaxParseHandler extends DefaultHandler {
 	
     private List<ClientPerson> persons = null;   
     private ClientPerson person = null;  
     
-    private String preTag = null;//×÷ÓÃÊÇ¼ÇÂ¼½âÎöÊ±µÄÉÏÒ»¸ö½ÚµãÃû³Æ   
+    private String preTag = null;//ä½œç”¨æ˜¯è®°å½•è§£ææ—¶çš„ä¸Šä¸€ä¸ªèŠ‚ç‚¹åç§°   
 
     public List<ClientPerson> getPersons(){   
         return persons;   
@@ -35,7 +35,7 @@ public class PersonSaxParseHandler extends DefaultHandler {
         if("return".equals(qName)){   
             person = new ClientPerson();   
         }   
-        preTag = qName;//½«ÕıÔÚ½âÎöµÄ½ÚµãÃû³Æ¸³¸øpreTag   
+        preTag = qName;//å°†æ­£åœ¨è§£æçš„èŠ‚ç‚¹åç§°èµ‹ç»™preTag   
     }   
   
     @Override  

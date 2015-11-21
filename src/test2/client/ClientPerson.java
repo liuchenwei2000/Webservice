@@ -7,9 +7,9 @@ package client;
 /**
  * 
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- *         ´´½¨ÈÕÆÚ£º2013-8-28
+ *         åˆ›å»ºæ—¥æœŸï¼š2013-8-28
  */
 public class ClientPerson {
 
